@@ -50,8 +50,6 @@ public class Locators {
 		driver1.findElement(By.xpath("//input[@type='text'][2]")).clear();
 		driver1.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("JohnDoe@gmail.com");
 		driver1.findElement(By.xpath("//form/input[3]")).sendKeys("123 456 7891");
-		driver1.findElement(By.cssSelector(".reset-pwd-btn")).click();
-		System.out.println(driver1.findElement(By.cssSelector("form p")).getText());
 		
 		//driver1.findElement(By.xpath("//input[@placeholder='Phone Number']")).sendKeys("123 456 7891");
 		
