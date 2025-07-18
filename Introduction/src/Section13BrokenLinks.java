@@ -1,42 +1,64 @@
-import java.util.Iterator;
-import java.util.Set;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class Section13BrokenLinks {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MalformedURLException, IOException {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
-
+		//Java methods will call URL's and will get the status code for you
+		//Step 1 is to get all URLs tied to the links using Selenium
+		//If status codes >400 then URL isn't working. Which means the link tied to that URL is broken
+		
+		//Go specifically to the footer
 		WebElement footerDriver = driver.findElement(By.id("gf-BIG"));
-
 		
+		//Declare variables
+		HttpURLConnection con;
+		int responseCode = 0;
+		SoftAssert softSert = new SoftAssert();
+
+		//Find and iterate through ever link
 		for(int i = 1; i < footerDriver.findElements(By.tagName("a")).size(); i++) {
-			String ClickOnLink = Keys.chord(Keys.CONTROL,Keys.ENTER);
-			footerDriver.findElements(By.tagName("a")).get(i).sendKeys(ClickOnLink);
+			//Create connection to the current link
+			con = (HttpURLConnection) new URL(footerDriver.findElements(By.tagName("a")).get(i).getAttribute("href")).openConnection();
+			
+			con.setRequestMethod("HEAD");
+			
+			con.connect();
+			
+			responseCode = con.getResponseCode();
+
+			//Print out if there's any issues with the link and then fail the test
+			softSert.assertTrue(responseCode < 400, "The link '" + footerDriver.findElements(By.tagName("a")).get(i).getText() + "' with the URL '"
+					+ con.getURL() + "' is giving the response " + responseCode);
+			
+			//Hard Assertion version
+			/*
+			if(responseCode > 400) {
+				System.out.println("The link '" + footerDriver.findElements(By.tagName("a")).get(i).getText() + "' with the URL '"
+						+ con.getURL() + "' is giving the response " + responseCode);
+				
+				Assert.assertTrue(false);
+			}
+			*/
+			
 		}
 		
-		try {
-			Thread.sleep(3000L);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
-		Set<String> windows = driver.getWindowHandles();
-		Iterator<String> it = windows.iterator();
+		//list all issues
+		softSert.assertAll();
 		
-		while(it.hasNext()) {
-			driver.switchTo().window(it.next());
-			System.out.println(driver.getTitle());			
-		}
-
 		driver.quit();
 
 	}
