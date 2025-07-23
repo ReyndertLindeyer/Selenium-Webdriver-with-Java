@@ -1073,3 +1073,63 @@ Caused by: java.io.IOException: The pipe is being closed
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 56162 -protocol json -d E:\Projects\SELENIUM java 4 course\Eclipse Workspace\Introduction\test-output C:\Users\rlind\AppData\Local\Temp\testng-eclipse--301242261\testng-customsuite.xml
 java -ea -classpath C:\Users\rlind\eclipse\java-2023-06\eclipse\configuration\org.eclipse.osgi\524\0\.cp\lib\testng-remote.jar:E:\Projects\SELENIUM java 4 course\Eclipse Workspace\Introduction\target\test-classes:E:\Projects\SELENIUM java 4 course\Eclipse Workspace\Introduction\target\classes:C:\Users\rlind\Downloads\commons-io-2.19.0-bin\commons-io-2.19.0\commons-io-2.19.0.jar:C:\Users\rlind\Downloads\commons-io-2.19.0-bin\commons-io-2.19.0\commons-io-2.19.0-javadoc.jar:C:\Users\rlind\Downloads\commons-io-2.19.0-bin\commons-io-2.19.0\commons-io-2.19.0-sources.jar:C:\Users\rlind\Downloads\commons-io-2.19.0-bin\commons-io-2.19.0\commons-io-2.19.0-tests.jar:C:\Users\rlind\Downloads\commons-io-2.19.0-bin\commons-io-2.19.0\commons-io-2.19.0-test-sources.jar:C:\Users\rlind\.p2\pool\plugins\org.testng_7.9.0.r202312310341.jar:C:\Users\rlind\.p2\pool\plugins\com.beust.jcommander_1.82.0.jar:C:\Users\rlind\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\rlind\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\rlind\.p2\pool\plugins\org.webjars.jquery_3.7.1.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-java\4.34.0\selenium-java-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-api\4.34.0\selenium-api-4.34.0.jar:C:\Users\rlind\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.34.0\selenium-chrome-driver-4.34.0.jar:C:\Users\rlind\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.34.0\selenium-chromium-driver-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-json\4.34.0\selenium-json-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.34.0\selenium-manager-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.34.0\selenium-devtools-v136-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.34.0\selenium-devtools-v137-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.34.0\selenium-devtools-v138-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.34.0\selenium-edge-driver-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.34.0\selenium-firefox-driver-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-http\4.34.0\selenium-http-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.34.0\selenium-ie-driver-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.34.0\selenium-remote-driver-4.34.0.jar:C:\Users\rlind\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar:C:\Users\rlind\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar:C:\Users\rlind\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:C:\Users\rlind\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar:C:\Users\rlind\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-api\1.51.0\opentelemetry-api-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-context\1.51.0\opentelemetry-context-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.51.0\opentelemetry-exporter-logging-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.51.0\opentelemetry-sdk-common-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.51.0\opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.51.0\opentelemetry-sdk-extension-autoconfigure-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.51.0\opentelemetry-sdk-trace-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.51.0\opentelemetry-sdk-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.51.0\opentelemetry-sdk-metrics-1.51.0.jar:C:\Users\rlind\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.51.0\opentelemetry-sdk-logs-1.51.0.jar:C:\Users\rlind\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-os\4.34.0\selenium-os-4.34.0.jar:C:\Users\rlind\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.34.0\selenium-safari-driver-4.34.0.jar:C:\Users\rlind\.m2\repository\org\seleniumhq\selenium\selenium-support\4.34.0\selenium-support-4.34.0.jar:C:\Users\rlind\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar:C:\Users\rlind\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar:C:\Users\rlind\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar:C:\Users\rlind\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar org.testng.remote.RemoteTestNG -serport 56162 -protocol json -d E:\Projects\SELENIUM java 4 course\Eclipse Workspace\Introduction\test-output C:\Users\rlind\AppData\Local\Temp\testng-eclipse--301242261\testng-customsuite.xml
+
+!ENTRY org.eclipse.core.jobs 4 0 2025-07-23 14:00:15.907
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.core.internal.jobs.JobActivator.stop() of bundle org.eclipse.core.jobs.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1046)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:376)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1893)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1768)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:208)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.log.Logger.log(Object, int, String, java.lang.Throwable)" because "this.logger" is null
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:68)
+	at org.testng.eclipse.TestNGPlugin.log(TestNGPlugin.java:104)
+	at org.testng.eclipse.TestNGPlugin.log(TestNGPlugin.java:96)
+	at org.testng.eclipse.ui.TestRunnerViewPart$3.canceling(TestRunnerViewPart.java:475)
+	at org.eclipse.core.internal.jobs.JobManager.cancel(JobManager.java:360)
+	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:662)
+	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:285)
+	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:60)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:875)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:867)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.log.Logger.log(Object, int, String, java.lang.Throwable)" because "this.logger" is null
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:68)
+	at org.testng.eclipse.TestNGPlugin.log(TestNGPlugin.java:104)
+	at org.testng.eclipse.TestNGPlugin.log(TestNGPlugin.java:96)
+	at org.testng.eclipse.ui.TestRunnerViewPart$3.canceling(TestRunnerViewPart.java:475)
+	at org.eclipse.core.internal.jobs.JobManager.cancel(JobManager.java:360)
+	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:662)
+	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:285)
+	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:60)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:875)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:867)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1046)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:376)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1893)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1768)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:208)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
