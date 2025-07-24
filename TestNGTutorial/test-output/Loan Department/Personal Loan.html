@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Personal Loan</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 23 16:56:28 EDT 2025</td>
+<td>Started on:</td><td>Thu Jul 24 13:28:00 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (61 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (51 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,56 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.Section16Day1.Demo2()'><b>Demo2</b><br>Test class: test.Section16Day1</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at test.Section16Day1.Demo2(Section16Day1.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1968172053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1968172053'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at test.Section16Day1.Demo2(Section16Day1.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>test.Section16Day1@45c7e403</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,60 +126,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.Section16Day4.LoginAPIHomeLoan()'><b>LoginAPIHomeLoan</b><br>Test class: test.Section16Day4</td>
+<td title='test.Section16Day1.Demo1()'><b>Demo1</b><br>Test class: test.Section16Day1<br>Parameters: qaclickacademy.com, 123456</td>
 <td></td>
 <td>0</td>
-<td>test.Section16Day4@4e08711f</td></tr>
-<tr>
-<td title='test.Section16Day2.UpLoan()'><b>UpLoan</b><br>Test class: test.Section16Day2</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day2@4d1c00d0</td></tr>
-<tr>
-<td title='test.Section16Day4.MobileLoginHomeLoan()'><b>MobileLoginHomeLoan</b><br>Test class: test.Section16Day4</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day4@4e08711f</td></tr>
-<tr>
-<td title='test.Section16Day1.Doko1()'><b>Doko1</b><br>Test class: test.Section16Day1</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day1@74e52ef6</td></tr>
-<tr>
-<td title='test.Section16Day3.MobileLoginCarLoan()'><b>MobileLoginCarLoan</b><br>Test class: test.Section16Day3</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day3@4b2bac3f</td></tr>
-<tr>
-<td title='test.Section16Day1.Demo2()'><b>Demo2</b><br>Test class: test.Section16Day1</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day1@74e52ef6</td></tr>
-<tr>
-<td title='test.Section16Day3.WebLoginCarLoan()'><b>WebLoginCarLoan</b><br>Test class: test.Section16Day3</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day3@4b2bac3f</td></tr>
-<tr>
-<td title='test.Section16Day3.LoginAPICarLoan()'><b>LoginAPICarLoan</b><br>Test class: test.Section16Day3</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day3@4b2bac3f</td></tr>
-<tr>
-<td title='test.Section16Day4.WebLoginHomeLoan()'><b>WebLoginHomeLoan</b><br>Test class: test.Section16Day4</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day4@4e08711f</td></tr>
+<td>test.Section16Day1@45c7e403</td></tr>
 <tr>
 <td title='test.Section16Day2.PayLoan()'><b>PayLoan</b><br>Test class: test.Section16Day2</td>
 <td></td>
 <td>0</td>
-<td>test.Section16Day2@4d1c00d0</td></tr>
-<tr>
-<td title='test.Section16Day1.Demo1()'><b>Demo1</b><br>Test class: test.Section16Day1</td>
-<td></td>
-<td>0</td>
-<td>test.Section16Day1@74e52ef6</td></tr>
+<td>test.Section16Day2@8297b3a</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+  <test thread-count="5" name="Regression">
+	  <groups>
+		  <run>
+			  <!-- <include name="smoke" /> -->
+			  <exclude name="smoke"/>
+		  </run>
+	  </groups>
+	<classes>
+      <class name="test.Section16Day1" />
+      <class name="test.Section16Day2" />
+      <class name="test.Section16Day3" />
+      <class name="test.Section16Day4" />
+    </classes>
+  </test> <!-- Home Loan Test -->
+</suite> <!-- Suite -->
