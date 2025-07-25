@@ -25,11 +25,19 @@ public class Section19LandingPage extends Section19AbstractComponent {
 	@FindBy(id="login")
 	WebElement loginButton;
 	
+	@FindBy(css="[class*=flyInOut]")
+	WebElement errorMessage;
+	
 	public Section19ProductCatalogue LoginApplication(String email, String password) {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
 		loginButton.click();
 		return new Section19ProductCatalogue(driver);
+	}
+	
+	public String GetErrorMessage() {
+		WaitForWebElementToAppear(errorMessage);
+		return errorMessage.getText();
 	}
 	
 	public void GoTo() {

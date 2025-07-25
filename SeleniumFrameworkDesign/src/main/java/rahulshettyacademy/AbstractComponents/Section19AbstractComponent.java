@@ -12,15 +12,17 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import rahulshettyacademy.pageobjects.Section19CartPage;
+import rahulshettyacademy.pageobjects.Section20OrderPage;
 
 public class Section19AbstractComponent {
 	protected WebDriver driver;
 	
 	@FindBy(css="[routerlink*='cart']")
 	WebElement cartButton;
+	@FindBy(css="[routerlink*='myorders']")
+	WebElement ordersButton;
 	
 	public Section19AbstractComponent(WebDriver driver) {
-		this.driver = driver;
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -30,7 +32,7 @@ public class Section19AbstractComponent {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 	}
 	
-	public void WaitForElementToAppear(WebElement findBy) {
+	public void WaitForWebElementToAppear(WebElement findBy) {
 		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(findBy));
 	}
@@ -43,6 +45,11 @@ public class Section19AbstractComponent {
 	public Section19CartPage GoToCartPage() {
 		cartButton.click();
 		return new Section19CartPage(driver);
+	}
+	
+	public Section20OrderPage GoToOrdersPage() {
+		ordersButton.click();
+		return new Section20OrderPage(driver);
 	}
 
 }
