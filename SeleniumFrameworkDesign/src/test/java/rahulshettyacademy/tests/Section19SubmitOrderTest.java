@@ -1,8 +1,14 @@
 package rahulshettyacademy.tests;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -54,9 +60,18 @@ public class Section19SubmitOrderTest extends Section20BaseTest {
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(input.get("product")));
 	}
 	
-	@DataProvider
-	public Object[][] GetData() {
+	public String GetScreenshot(WebDriver driver, String testCaseName) throws IOException {
+		TakesScreenshot scrShot =((TakesScreenshot)driver);
+		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		File filePath = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+		FileUtils.copyFile(SrcFile, filePath);
 		
+		return System.getProperty(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+	}
+	
+	@DataProvider
+	public Object[][] GetData() throws IOException {
+		/*
 		HashMap<String, String> map1 = new HashMap<String,String>();
 		map1.put("email", "vbnm@hmail.com");
 		map1.put("password", "NightCity2077");
@@ -66,8 +81,11 @@ public class Section19SubmitOrderTest extends Section20BaseTest {
 		map2.put("email", "vbnm@hmail.com");
 		map2.put("password", "NightCity2077");
 		map2.put("product", "ADIDAS ORIGINAL");
+		*/
 		
-		return new Object[][] {{map1},{map2}};
+		List<HashMap<String, String>> data = GetJsonDataToMap(System.getProperty("user.dir") + "\\src\\test\\java\\rahulshettyacademy\\data\\PurchaseOrder.json");
+		
+		return new Object[][] {{data.get(0)},{data.get(1)}};
 	}
 
 }

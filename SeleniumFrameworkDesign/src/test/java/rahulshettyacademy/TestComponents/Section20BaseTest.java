@@ -3,6 +3,8 @@ package rahulshettyacademy.TestComponents;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -12,12 +14,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import rahulshettyacademy.data.Section21DataReader;
 import rahulshettyacademy.pageobjects.Section19LandingPage;
 
 public class Section20BaseTest {
 
-	WebDriver driver;
+	protected WebDriver driver;
 	public Section19LandingPage landingPage;
+	Section21DataReader dataReader;
 	
 	@BeforeMethod(alwaysRun=true)
 	public Section19LandingPage LaunchApplication() throws IOException {
@@ -54,6 +58,11 @@ public class Section20BaseTest {
 		driver.manage().window().maximize();
 		
 		return driver;
+	}
+	
+	public List<HashMap<String, String>> GetJsonDataToMap(String jsonName) throws IOException{
+		dataReader = new Section21DataReader();
+		return dataReader.GetJsonDataToMap(jsonName);
 	}
 
 	@AfterMethod(alwaysRun=true)
