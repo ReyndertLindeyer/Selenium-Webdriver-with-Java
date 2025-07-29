@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rahulshettyacademy.tests.Section20ErrorValidations">
+      <class name="rahulshettyacademy.tests.Section20ErrorValidationsTest">
         <methods>
           <include name="LaunchApplication"/>
-          <include name="ProductErrorValidation"/>
           <include name="TearDown"/>
+          <include name="LoginErrorValidation"/>
         </methods>
-      </class> <!-- rahulshettyacademy.tests.Section20ErrorValidations -->
+      </class> <!-- rahulshettyacademy.tests.Section20ErrorValidationsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

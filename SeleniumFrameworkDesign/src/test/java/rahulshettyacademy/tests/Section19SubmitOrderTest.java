@@ -60,15 +60,6 @@ public class Section19SubmitOrderTest extends Section20BaseTest {
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(input.get("product")));
 	}
 	
-	public String GetScreenshot(WebDriver driver, String testCaseName) throws IOException {
-		TakesScreenshot scrShot =((TakesScreenshot)driver);
-		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-		File filePath = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
-		FileUtils.copyFile(SrcFile, filePath);
-		
-		return System.getProperty(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
-	}
-	
 	@DataProvider
 	public Object[][] GetData() throws IOException {
 		/*
