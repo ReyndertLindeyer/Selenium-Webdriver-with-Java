@@ -6,6 +6,9 @@
 			<include name="Purchase"></include>
 		</run>
 	</groups>
+	<listeners>
+		<listener class-name="rahulshettyacademy.TestComponents.Section22Listeners"></listener>
+	</listeners>
   <test name="Submit Order Test">
     <classes>
       <class name="rahulshettyacademy.tests.Section19SubmitOrderTest"/>
