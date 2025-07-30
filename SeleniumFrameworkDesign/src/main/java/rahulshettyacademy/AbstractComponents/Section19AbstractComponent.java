@@ -28,18 +28,23 @@ public class Section19AbstractComponent {
 	}
 	
 	public void WaitForElementToAppear(By findBy) {
-		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 	}
 	
 	public void WaitForWebElementToAppear(WebElement findBy) {
-		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(findBy));
 	}
 	
 	public void WaitForElementToDisappear(WebElement ele) {
-		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.invisibilityOf(ele));
+	}
+	
+	public void WaitForElementClickable(WebElement ele) {
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(ele));
 	}
 	
 	public Section19CartPage GoToCartPage() {

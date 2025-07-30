@@ -22,7 +22,7 @@ public class Section19LandingPage extends Section19AbstractComponent {
 	@FindBy(id="userPassword")
 	WebElement userPassword;
 	
-	@FindBy(id="login")
+	@FindBy(css="[class*=login-btn]")
 	WebElement loginButton;
 	
 	@FindBy(css="[class*=flyInOut]")
@@ -31,6 +31,7 @@ public class Section19LandingPage extends Section19AbstractComponent {
 	public Section19ProductCatalogue LoginApplication(String email, String password) {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
+		WaitForElementClickable(loginButton);
 		loginButton.click();
 		return new Section19ProductCatalogue(driver);
 	}
