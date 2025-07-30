@@ -16,11 +16,20 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\Projects\SELENIUM java 4 course\Eclipse Workspace\SeleniumFrameworkDesign\src\main\java\testsuites\Purchase.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,12 +53,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="rahulshettyacademy.ExtentReports"/>
 			<item value="rahulshettyacademy"/>
 		</list>
 		<list key="groupId">
 			<item value="rahulshettyacademy"/>
 		</list>
 		<list key="artifactId">
+			<item value="ExtentReports"/>
 			<item value="SeleniumFrameworkDesign"/>
 		</list>
 		<list key="projectNameTemplate">

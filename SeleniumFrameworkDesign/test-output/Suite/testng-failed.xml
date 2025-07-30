@@ -4,15 +4,20 @@
   <listeners>
     <listener class-name="rahulshettyacademy.TestComponents.Section22Listeners"/>
   </listeners>
-  <test thread-count="5" name="Error Validations Test(failed)">
+  <test thread-count="5" name="Submit Order Test(failed)">
+    <groups>
+      <run>
+        <include name="Purchase"/>
+      </run>
+    </groups>
     <classes>
-      <class name="rahulshettyacademy.tests.Section20ErrorValidationsTest">
+      <class name="rahulshettyacademy.tests.Section19SubmitOrderTest">
         <methods>
           <include name="LaunchApplication"/>
           <include name="TearDown"/>
-          <include name="LoginErrorValidation"/>
+          <include name="SubmitOrder" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- rahulshettyacademy.tests.Section20ErrorValidationsTest -->
+      </class> <!-- rahulshettyacademy.tests.Section19SubmitOrderTest -->
     </classes>
-  </test> <!-- Error Validations Test(failed) -->
+  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

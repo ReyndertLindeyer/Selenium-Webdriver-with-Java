@@ -16,7 +16,7 @@ public class Section20ErrorValidationsTest extends Section20BaseTest {
 		landingPage.LoginApplication("vASDbn@hmail.com", "NightC1ty2077");
 		
 		//Get error
-		Assert.assertEquals("Incorrect mail or password.", landingPage.GetErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.GetErrorMessage());
 	}
 	
 	@Test(groups= {"ErrorHandling"})
