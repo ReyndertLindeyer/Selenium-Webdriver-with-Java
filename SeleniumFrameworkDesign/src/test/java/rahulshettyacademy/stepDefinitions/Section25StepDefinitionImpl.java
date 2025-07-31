@@ -61,4 +61,10 @@ public class Section25StepDefinitionImpl extends Section20BaseTest {
 		Assert.assertTrue(confirmationPage.GetSuccessMessage().equalsIgnoreCase(confirmationMessage));
 		driver.quit();
 	}
+	
+	@Then("{string} message is displayed")
+	public void Message_is_displayed(String confirmationMessage) {
+		Assert.assertEquals(confirmationMessage, landingPage.GetErrorMessage());
+		driver.quit();
+	}
 }
